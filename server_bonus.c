@@ -44,7 +44,8 @@ int	main(void)
 	sa.sa_sigaction = &handle_signal;
 	sa.sa_flags = SA_SIGINFO;
 	sigemptyset(&sa.sa_mask);
-	printf("%d\n", getpid());
+	ft_putnbr(get_pid());
+	ft_putstr("\n");
 	sigaction(SIGUSR1, &sa, NULL);
 	sigaction(SIGUSR2, &sa, NULL);
 	while (1)

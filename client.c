@@ -41,7 +41,7 @@ int	main(int argc, char *argv[])
 	{
 		ft_putstr("Usage: ");
 		ft_putstr(argv[0]);
-		ft_putstr(" <pid> <message>\n");
+		ft_putstr("<pid> <message>\n");
 		exit(0);
 	}
 	server_pid = ft_atoi(argv[1]);
